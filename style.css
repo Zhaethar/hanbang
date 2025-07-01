@@ -1,0 +1,314 @@
+/* style.css */
+
+/* 기본 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+    background-color: #F9F8F2;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Layout */
+  #wrap {
+    max-width: 980px;
+    margin: auto;
+    background-color: #fff;
+    padding-bottom: 60px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #B1CBA3;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline blue;
+  }
+  
+  /* Main Banner */
+  .main img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Vision Message */
+  .vision {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #EDF6F9;
+  }
+  
+  .vision h2 {
+    font-size: 24px;
+    color: #457B9D;
+    margin-bottom: 10px;
+  }
+  
+  .vision p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Info Cards */
+  .info {
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .info h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 200px;
+    background-color: #F1F1F1;
+    border: 1px solid #DDD;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+    font-size: 15px;
+  }
+  
+  .card:hover {
+    background-color: #E2F0DA;
+    transform: translateY(-5px);
+  }
+  
+  /* Doctors */
+  .doctors {
+    padding: 60px 20px;
+    background-color: #F4F4F4;
+    text-align: center;
+  }
+  
+  .doctor-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    align-items: center;
+  }
+  
+  .doctor-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .doctor-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .doctor-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #2A2A2A;
+  }
+  
+  .doctor-card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Notice & News */
+  .notice-news {
+    display: flex;
+    align-items: flex-start;
+    padding: 40px 20px;
+    gap: 40px;
+    justify-content: space-between;
+    background-color: #FAFAFA;
+
+  }
+
+  .notice { 
+    width: 55%;
+   }
+
+   .news { 
+    width: 40%;
+   }
+
+
+    /*공지 상단*/
+  
+  .notice-header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+
+  /*더보기 버튼*/
+
+  .notice .more { 
+    font-size: 14px;
+    color:#457B9D;
+    text-decoration: none;
+}
+
+.notice .more:hover {
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+    /*공지항목*/
+
+  .notice ul {
+      padding: 0;
+  }
+  
+  .notice ul li {
+     font-size: 14px;
+    padding: 6px 0;
+    border-bottom: 1px solid gray;
+  }
+
+  .notice ul li:hover {
+    font-weight: bold;
+
+  }
+  
+  /*병원 소식*/
+
+  .news-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .news-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .news-card img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 8px;
+  }
+  
+  /* Location */
+  .location {
+    padding: 40px 20px;
+    background-color: #EAF4EA;
+  }
+  
+  .location h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Footer */
+  #footer {
+    background-color: #B1CBA3;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  #footer .foot ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  #footer .foot ul li {
+    font-size: 14px;
+  }
+  
+  #footer address {
+    font-size: 13px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .sns a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+  }
+  
+  .kakao {
+    background-color: #FFD600;
+    color: #333;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+
+  .philosophy img {
+    width:30%;
+
+  }
+
+  .space-gallery img{ 
+    width: 48%;
+   }
